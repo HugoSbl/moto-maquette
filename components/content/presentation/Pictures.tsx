@@ -3,6 +3,7 @@ import styled from "styled-components";
 const ContainerPicturesAndJapanese = styled.div`
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 `;
 
 const MotoContainer = styled.div`
@@ -15,13 +16,11 @@ const MotoContainer = styled.div`
 `;
 
 const MotorBike = styled.img`
-  float: left;
   width: 80%;
   object-fit: contain;
 `;
 
 const Headlights = styled.img`
-  float: right;
   width: 20%;
   object-fit: contain;
 `;

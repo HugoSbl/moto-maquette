@@ -6,15 +6,23 @@ const StyledBackground = styled.div`
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: auto;
   background-color: #020202;
-  overflow: hidden;
+`;
+
+const CustomFont = styled.div`
+  @font-face {
+    font-family: "DrukWide";
+    src: url("../styles/font/Druk-Wide-Bold.ttf") format("truetype");
+  }
 `;
 
 export default function Home() {
   return (
     <StyledBackground>
-      <Main />
+      <CustomFont>
+        <Main />
+      </CustomFont>
     </StyledBackground>
   );
 }

@@ -18,7 +18,7 @@ const NavHeader = () => (
     <Img src="/logoMontBlanc.png" alt="MontBlanc logo" />
     <ul>
       <li>
-        <Link href="/">Home</Link>
+        <Link href="/"></Link>
       </li>
       <li>
         <Link href="">About</Link>
