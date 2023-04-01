@@ -39,6 +39,7 @@ const Top = styled.span`
 `;
 
 const Middle = styled.span`
+  font-family: "Russo One", sans-serif;
   margin-top: auto;
   margin-bottom: auto;
   font-size: 3em;

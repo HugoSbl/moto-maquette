@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 const ContainerPicturesAndJapanese = styled.div`
   display: flex;
@@ -15,14 +15,40 @@ const MotoContainer = styled.div`
   overflow: hidden;
 `;
 
-const MotorBike = styled.img`
+const BikeAndLogoContainer = styled.div`
   width: 80%;
+  position: relative;
+`;
+
+const MotorBike = styled.img`
+  width: 100%;
   object-fit: contain;
+  z-index: 1;
 `;
 
 const Headlights = styled.img`
   width: 20%;
   object-fit: contain;
+  z-index: 1;
+`;
+
+const spin = keyframes`
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+`;
+
+const RoundLogo = styled.img`
+  width: 20%;
+  top: 0;
+  right: 0;
+  position: absolute;
+  z-index: 2;
+  transform-origin: center;
+  animation: ${spin} 20s linear infinite;
 `;
 
 const JapaneseText = styled.img`
@@ -33,7 +59,10 @@ const Pictures = () => {
   return (
     <ContainerPicturesAndJapanese>
       <MotoContainer>
-        <MotorBike src="/bike.png" alt="bike" />
+        <BikeAndLogoContainer>
+          <MotorBike src="/bike.png" alt="bike" />
+          <RoundLogo src={"/roundLogo.png"} alt={"Round logo"} />
+        </BikeAndLogoContainer>
         <Headlights src={"/headlight.png"} alt={"bike's headlight"} />
       </MotoContainer>
 

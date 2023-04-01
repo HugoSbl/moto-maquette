@@ -1,9 +1,11 @@
 import VerticalLine from "./VerticalLine";
+import TextDescription from "./TextDescription";
 
 const Description = () => {
   return (
     <>
-      <VerticalLine></VerticalLine>
+      <VerticalLine />
+      <TextDescription />
     </>
   );
 };
