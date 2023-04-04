@@ -1,4 +1,5 @@
 import styled, { keyframes } from "styled-components";
+import devices from "../../../styles/devices";
 
 const ContainerPicturesAndJapanese = styled.div`
   display: flex;
@@ -18,6 +19,9 @@ const MotoContainer = styled.div`
 const BikeAndLogoContainer = styled.div`
   width: 80%;
   position: relative;
+  @media ${devices.laptop} {
+    width: 70%;
+  }
 `;
 
 const MotorBike = styled.img`
@@ -49,10 +53,28 @@ const RoundLogo = styled.img`
   z-index: 2;
   transform-origin: center;
   animation: ${spin} 20s linear infinite;
+  @media ${devices.laptop} {
+    right: -5em;
+  }
+`;
+
+const JapaneseTextContainer = styled.div`
+  width: 100%;
+  height: 6em;
+  position: relative;
 `;
 
 const JapaneseText = styled.img`
-  width: 130%;
+  width: 150%;
+  position: absolute;
+  right: 0;
+  @media ${devices.tablet} {
+    top: -2.5em;
+  }
+  @media ${devices.laptop} {
+    top: -5.5em;
+    width: 125%;
+  }
 `;
 
 const Pictures = () => {
@@ -65,8 +87,9 @@ const Pictures = () => {
         </BikeAndLogoContainer>
         <Headlights src={"/headlight.png"} alt={"bike's headlight"} />
       </MotoContainer>
-
-      <JapaneseText src={"/japanese.png"} alt={"japanese text"} />
+      <JapaneseTextContainer>
+        <JapaneseText src={"/japanese.png"} alt={"japanese text"} />
+      </JapaneseTextContainer>
     </ContainerPicturesAndJapanese>
   );
 };

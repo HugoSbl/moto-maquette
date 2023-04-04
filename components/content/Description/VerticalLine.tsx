@@ -8,6 +8,9 @@ const Center = styled.div`
   @media ${devices.tablet} {
     min-width: 30%;
   }
+  @media ${devices.laptopL} {
+    min-width: 40%;
+  }
 `;
 
 const Container = styled.div`

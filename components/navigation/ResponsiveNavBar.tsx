@@ -11,7 +11,8 @@ const Navigation = styled.ul`
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
-
+  margin: 0;
+  padding: 0;
   @media (max-width: 768px) {
     display: none;
   }

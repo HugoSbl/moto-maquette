@@ -47,7 +47,7 @@ const Middle = styled.span`
   font-family: "Russo One", sans-serif;
   margin-top: auto;
   margin-bottom: auto;
-  font-size: 3em;
+  font-size: 2.9em;
   font-weight: 900;
   line-height: 1.6em;
 `;

@@ -40,6 +40,10 @@ const Container = styled.div`
     flex-direction: row;
     flex-wrap: wrap;
   }
+  @media ${devices.laptopL} {
+    width: 20%;
+    margin-top: 18%;
+  }
 `;
 
 const Technicals = () => {

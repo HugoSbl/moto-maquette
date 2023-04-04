@@ -7,10 +7,14 @@ const Text = styled.div`
   font-weight: 100;
   font-size: 0.8em;
   line-height: 1.8em;
-  margin: 0 3em;
+  margin: 0 3em 0 1em;
   text-align: justify;
   @media ${devices.tablet} {
     font-size: 1em;
+  }
+  @media ${devices.laptopL} {
+    margin: 0 1em 0 1em;
+    line-height: 2.1em;
   }
 `;
 
