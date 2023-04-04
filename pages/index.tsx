@@ -8,6 +8,7 @@ const StyledBackground = styled.div`
   width: 100%;
   height: auto;
   background-color: #020202;
+  height: 100%;
 `;
 
 const CustomFont = styled.div`
