@@ -15,10 +15,6 @@ const CustomFont = styled.div`
     font-family: "DrukWide";
     src: url("../styles/font/Druk-Wide-Bold.ttf") format("truetype");
   }
-  @font-face {
-    font-family: "RussoOne";
-    src: url("../styles/font/RussoOne-Regular.ttf") format("truetype");
-  }
 `;
 
 export default function Home() {

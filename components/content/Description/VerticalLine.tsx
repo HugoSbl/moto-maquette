@@ -1,8 +1,13 @@
 import styled from "styled-components";
+import devices from "../../../styles/devices";
 
 const Center = styled.div`
-  display: flex;
   justify-content: center;
+  align-items: center;
+  display: flex;
+  @media ${devices.tablet} {
+    min-width: 30%;
+  }
 `;
 
 const Container = styled.div`
@@ -13,6 +18,9 @@ const Container = styled.div`
   color: white;
   font-family: "Russo One", sans-serif;
   width: 50%;
+  @media ${devices.tablet} {
+    min-width: 90%;
+  }
 `;
 
 const Line = styled.div`

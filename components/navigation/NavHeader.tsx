@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styled from "styled-components";
+import ResponsiveNavBar from "./ResponsiveNavBar";
 
 const StyledHeader = styled.div`
   height: 3rem;
@@ -8,22 +9,15 @@ const StyledHeader = styled.div`
   display: flex;
   justify-content: space-between;
 `;
-const Img = styled.img`
+const ImgLogo = styled.img`
   height: 65%;
   margin: 0 0 0.25em 0.25em;
 `;
 
 const NavHeader = () => (
   <StyledHeader>
-    <Img src="/logoMontBlanc.png" alt="MontBlanc logo" />
-    <ul>
-      <li>
-        <Link href="/"></Link>
-      </li>
-      <li>
-        <Link href="">About</Link>
-      </li>
-    </ul>
+    <ImgLogo src="/logoMontBlanc.png" alt="MontBlanc logo" />
+    <ResponsiveNavBar />
   </StyledHeader>
 );
 

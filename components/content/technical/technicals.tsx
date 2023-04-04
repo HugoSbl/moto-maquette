@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import TechnicalInformationBlock from "./TechnicalsInformationBlock";
+import devices from "../../../styles/devices";
 
 export type TechnicalInformation = {
   title: string;
@@ -35,6 +36,10 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media ${devices.tablet} and ${devices.laptopMax} {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 `;
 
 const Technicals = () => {

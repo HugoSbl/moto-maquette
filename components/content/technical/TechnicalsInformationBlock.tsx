@@ -1,5 +1,6 @@
 import { TechnicalInformation } from "./technicals";
 import styled from "styled-components";
+import devices from "../../../styles/devices";
 
 const GlobalContainer = styled.div`
   display: flex;
@@ -7,10 +8,14 @@ const GlobalContainer = styled.div`
   color: white;
   padding: 1em;
   height: 10em;
-  width: 90%;
+  width: 100%;
   font-family: "DrukWide", sans-serif;
   justify-content: center;
+  @media ${devices.tablet} and ${devices.laptopMax} {
+    width: 45%;
+  }
 `;
+
 const Center = styled.div`
   display: flex;
   width: 300px;

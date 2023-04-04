@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import devices from "../../../styles/devices";
 
 const Text = styled.div`
   color: white;
@@ -8,6 +9,9 @@ const Text = styled.div`
   line-height: 1.8em;
   margin: 0 3em;
   text-align: justify;
+  @media ${devices.tablet} {
+    font-size: 1em;
+  }
 `;
 
 const textDescription = () => {
