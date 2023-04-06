@@ -4,7 +4,9 @@ import devices from "../../../styles/devices";
 const ContainerPicturesAndJapanese = styled.div`
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  @media ${devices.laptopL} {
+    height: 80%;
+  }
 `;
 
 const MotoContainer = styled.div`
@@ -13,14 +15,17 @@ const MotoContainer = styled.div`
   flex-direction: row;
   justify-content: space-between;
   margin: 5em 0 5em 0;
-  overflow: hidden;
+  @media ${devices.laptopL} {
+    height: 75%;
+    margin: 0;
+  }
 `;
 
 const BikeAndLogoContainer = styled.div`
   width: 80%;
   position: relative;
-  @media ${devices.laptop} {
-    width: 70%;
+  @media ${devices.laptopL} {
+    height: 120%;
   }
 `;
 
@@ -28,6 +33,9 @@ const MotorBike = styled.img`
   width: 100%;
   object-fit: contain;
   z-index: 1;
+  @media ${devices.laptopL} {
+    height: 100%;
+  }
 `;
 
 const Headlights = styled.img`
@@ -47,7 +55,7 @@ const spin = keyframes`
 
 const RoundLogo = styled.img`
   width: 20%;
-  top: 0;
+  top: 0.5em;
   right: 0;
   position: absolute;
   z-index: 2;
@@ -62,17 +70,24 @@ const JapaneseTextContainer = styled.div`
   width: 100%;
   height: 6em;
   position: relative;
+  @media ${devices.laptopL} {
+    height: 25%;
+  }
 `;
 
 const JapaneseText = styled.img`
   width: 150%;
   position: absolute;
   right: 0;
+  z-index: 2;
+
   @media ${devices.tablet} {
     top: -2.5em;
   }
   @media ${devices.laptop} {
-    top: -5.5em;
+    //top: -5.5em;
+    top: 0;
+    bottom: 0;
     width: 125%;
   }
 `;

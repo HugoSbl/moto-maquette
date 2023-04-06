@@ -42,7 +42,7 @@ const Container = styled.div`
   }
   @media ${devices.laptopL} {
     width: 20%;
-    margin-top: 18%;
+    margin-top: 15%;
   }
 `;
 

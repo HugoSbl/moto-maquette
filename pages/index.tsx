@@ -6,9 +6,9 @@ const StyledBackground = styled.div`
   top: 0;
   left: 0;
   width: 100%;
-  height: auto;
   background-color: #020202;
   height: 100%;
+  overflow-x: hidden;
 `;
 
 const CustomFont = styled.div`
@@ -17,6 +17,8 @@ const CustomFont = styled.div`
     src: url("../styles/font/Druk-Wide-Bold.ttf") format("truetype");
   }
 `;
+
+const MaxWidth = styled.div``;
 
 export default function Home() {
   return (

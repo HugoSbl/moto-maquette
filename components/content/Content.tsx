@@ -7,14 +7,16 @@ import styled from "styled-components";
 const GlobalContainer = styled.div`
   @media ${devices.laptopL} {
     display: flex;
+    height: 82vh;
   }
 `;
 
-const Container = styled.div`
+const ContainerPictureDescription = styled.div`
   @media ${devices.laptopL} {
     width: 80%;
     background-color: #020202;
     z-index: 1;
+    height: 85vh;
   }
 `;
 
@@ -22,9 +24,15 @@ const GoldBackground = styled.img`
   width: 30%;
   position: absolute;
 
-  top: 0em;
-  right: 0em;
+  top: 0;
+  right: 0;
   @media ${devices.laptopMax} {
+    display: none;
+  }
+  @media ${devices.desktop} {
+    top: -4em;
+  }
+  @media (min-width: 2600px) {
     display: none;
   }
 `;
@@ -32,10 +40,11 @@ const GoldBackground = styled.img`
 const Content = () => {
   return (
     <GlobalContainer>
-      <Container>
+      <ContainerPictureDescription>
         <Pictures />
         <Description />
-      </Container>
+      </ContainerPictureDescription>
+
       <GoldBackground src="/gold-background.png" />
       <Technicals />
     </GlobalContainer>

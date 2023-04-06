@@ -24,7 +24,7 @@ const Center = styled.div`
 
 const Title = styled.span`
   writing-mode: vertical-rl;
-  margin-left: 1em; // demander a flo si on peut mieux faire
+  margin-left: 1em;
   font-size: 1.3em;
   font-weight: lighter;
   transform: rotate(180deg);

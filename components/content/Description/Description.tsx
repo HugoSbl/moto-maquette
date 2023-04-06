@@ -10,6 +10,8 @@ const Container = styled.div`
   @media ${devices.tablet} {
     display: flex;
   }
+  @media ${devices.laptopL} {
+  }
 `;
 
 const Description = () => {

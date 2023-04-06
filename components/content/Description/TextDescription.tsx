@@ -7,7 +7,7 @@ const Text = styled.div`
   font-weight: 100;
   font-size: 0.8em;
   line-height: 1.8em;
-  margin: 0 3em 0 1em;
+  margin: 0 3em 0 3em;
   text-align: justify;
   @media ${devices.tablet} {
     font-size: 1em;
